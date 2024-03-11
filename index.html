@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+
+    <h1>Student Data Management</h1>
+   
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter name">
+
+    <label for="rollno">Roll Number:</label>
+    <input type="text" id="rollno" placeholder="Enter roll number">
+
+    <label for="course">Course:</label>
+    <input type="text" id="course" placeholder="Enter course">
+
+    <label for="institute">Institute:</label>
+    <input type="text" id="institute" placeholder="Enter institute">
+
+    <button onclick="addStudent()">Add Student</button>
+
+    <button onclick="showStudents()">Show Students</button>
+    <button onclick="clearStudents()">Clear Students</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll Number</th>
+                <th>Course</th>
+                <th>Institute</th>
+            </tr>
+        </thead>
+        <tbody id="studentList"></tbody>
+    </table>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
